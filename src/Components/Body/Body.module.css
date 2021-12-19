@@ -1,0 +1,25 @@
+.MainInfo {
+  margin-bottom: 5%;
+  height: 600px;
+  width: 90vw;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: linear-gradient(
+      171deg,
+      rgba(0, 14, 107, 0.5) 0%,
+      rgba(91, 0, 255, 0.5) 100%
+    ),
+    url('https://preview.redd.it/n293fuzt52061.jpg?auto=webp&s=520df9e895a22eabf582cf8a92ad9ba73be67067')
+      no-repeat center/100%;
+}
+
+/* .MainInfo section {
+  background: rgba(39, 62, 84, 0.82);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+} */

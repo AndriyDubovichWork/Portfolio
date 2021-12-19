@@ -6,27 +6,40 @@ import {
   Typography,
   FormControlLabel,
 } from '@mui/material';
-import { darkTheme, ligthTheme } from '../styles';
-import MaterialUISwitch from './../helpers/MaterialUISwitch';
-import HideOnScroll from '../helpers/HideOnScroll';
+import { darkTheme, ligthTheme } from '../../styles';
+import MaterialUISwitch from '../../helpers/MaterialUISwitch';
+import HideOnScroll from '../../helpers/HideOnScroll';
 import { connect } from 'react-redux';
-import { SetTheme } from './../Redux/MainPageReducer';
-let theme = darkTheme;
+import { SetTheme } from '../../Redux/MainPageReducer';
+let sitetheme = darkTheme;
+let MaterialUISwitchlabel = 'hacker';
 class Header extends React.Component {
   componentDidMount() {
-    if (this.props.isDarkTheme) {
-      theme = darkTheme;
+    if (!this.props.isDarkTheme) {
+      sitetheme = darkTheme;
+      MaterialUISwitchlabel = 'hacker';
     } else {
-      theme = ligthTheme;
+      sitetheme = ligthTheme;
+      MaterialUISwitchlabel = 'user';
     }
   }
+  componentDidUpdate() {
+    if (!this.props.isDarkTheme) {
+      sitetheme = darkTheme;
+      MaterialUISwitchlabel = 'hacker';
+    } else {
+      sitetheme = ligthTheme;
+      MaterialUISwitchlabel = 'user';
+    }
+  }
+
   ChangeThemeColorHandler(event) {
     this.props.SetTheme(event.target.checked);
   }
   render() {
     return (
       <HideOnScroll {...this.props}>
-        <AppBar theme={theme} position='static'>
+        <AppBar theme={sitetheme} position='static'>
           <Toolbar>
             <Grid
               container
@@ -52,12 +65,11 @@ class Header extends React.Component {
                 <MaterialUISwitch
                   checked={this.props.isDarkTheme}
                   sx={{ m: 1 }}
-                  defaultChecked
                   onChange={this.ChangeThemeColorHandler.bind(this)}
                 />
               }
               // label={props.themeInfo}
-              label={'hacker'}
+              label={MaterialUISwitchlabel}
             />
           </Toolbar>
         </AppBar>

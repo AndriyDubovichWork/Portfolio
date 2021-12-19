@@ -1,8 +1,42 @@
+import { RerenderEntireTree } from './../index';
+import SocialNetworkimg from './../imgs/SocialNetwork.png';
+import CovidData from './../imgs/CovidData.png';
+import ToDo from './../imgs/ToDo.png';
+import MicrosoftCopy from './../imgs/MicrosoftCopy.png';
+import SportTimer from './../imgs/SportTimer.png';
+
 const SET_MY_AGE = 'SET_MY_AGE';
 const SET_THEME_COLOR = 'SET_THEME_COLOR';
 let initialState = {
   MyAge: 16,
   isDarkTheme: true,
+  itemData: [
+    {
+      img: SocialNetworkimg,
+      title: 'React Based Social Network',
+      id: 1,
+    },
+    {
+      img: MicrosoftCopy,
+      title: 'Microsoft.com site adapive copy',
+      id: 2,
+    },
+    {
+      img: SportTimer,
+      title: 'Sport timer',
+      id: 3,
+    },
+    {
+      img: ToDo,
+      title: 'JS ToDo list',
+      id: 4,
+    },
+    {
+      img: CovidData,
+      title: 'Covid Data form API',
+      id: 5,
+    },
+  ],
 };
 
 const MainPageReducer = (state = initialState, action) => {
@@ -49,7 +83,13 @@ export const SetAge = () => (dispatch) => {
   dispatch(SetMyAge(age));
 };
 export const SetTheme = (isDarkTheme) => (dispatch) => {
+  if (isDarkTheme) {
+    document.body.style.backgroundColor = '#0A1929';
+  } else {
+    document.body.style.backgroundColor = '#fff';
+  }
   dispatch(SetThemeColor(isDarkTheme));
+  RerenderEntireTree();
 };
 
 export default MainPageReducer;
