@@ -1,6 +1,6 @@
 import { createTheme } from '@mui/material/styles';
 
-export const CreateMyTheme = (mainColor, fontColor) =>
+const CreateMyTheme = (mainColor, fontColor) =>
   createTheme({
     typography: {
       fontFamily: [

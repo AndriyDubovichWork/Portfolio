@@ -9,6 +9,7 @@ import {
 import { darkTheme, ligthTheme } from '../../styles';
 import MaterialUISwitch from '../../helpers/MaterialUISwitch';
 import HideOnScroll from '../../helpers/HideOnScroll';
+import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { SetTheme } from '../../Redux/MainPageReducer';
 let sitetheme = darkTheme;
@@ -48,16 +49,24 @@ class Header extends React.Component {
               style={{ minHeight: '1vh' }}
             >
               <Grid item xs={4}>
-                <Typography
-                  variant='h6'
-                  component='span'
-                  sx={{
-                    fontFamily: 'Bakbak One',
-                    fontSize: 'h5.fontSize',
+                <NavLink
+                  to='/'
+                  style={{
+                    textDecoration: 'none',
+                    color: sitetheme.palette.primary.color,
                   }}
                 >
-                  Andriy Dubovich Portfolio
-                </Typography>
+                  <Typography
+                    variant='h6'
+                    component='span'
+                    sx={{
+                      fontFamily: 'Bakbak One',
+                      fontSize: 'h5.fontSize',
+                    }}
+                  >
+                    Andriy Dubovich Portfolio
+                  </Typography>
+                </NavLink>
               </Grid>
             </Grid>
             <FormControlLabel

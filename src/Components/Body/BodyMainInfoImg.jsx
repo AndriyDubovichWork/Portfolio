@@ -6,7 +6,7 @@ import style from './Body.module.css';
 const BodyMainInfoImg = (props) => {
   return (
     <Typography
-      theme={props.sitetheme}
+      theme={props.theme}
       sx={{ mt: 3 }}
       className={style.MainInfo}
       component='div'
