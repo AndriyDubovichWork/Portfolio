@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.599a5b0e.css",
+    "main.js": "/Portfolio/static/js/main.f67969e7.js",
+    "static/media/MicrosoftCopy.png": "/Portfolio/static/media/MicrosoftCopy.b3bae1ac2323768e85ed.png",
+    "static/media/SportTimer.png": "/Portfolio/static/media/SportTimer.d6d244310b375eda246b.png",
+    "static/media/SocialNetwork.png": "/Portfolio/static/media/SocialNetwork.2fde0741c2a8b34166a8.png",
+    "static/media/CovidData.png": "/Portfolio/static/media/CovidData.ad0a2e013490c15bfed4.png",
+    "static/media/ToDo.png": "/Portfolio/static/media/ToDo.d08891b5ea5f2948725e.png",
+    "index.html": "/Portfolio/index.html",
+    "main.599a5b0e.css.map": "/Portfolio/static/css/main.599a5b0e.css.map",
+    "main.f67969e7.js.map": "/Portfolio/static/js/main.f67969e7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.599a5b0e.css",
+    "static/js/main.f67969e7.js"
+  ]
+}
