@@ -45,7 +45,7 @@ const Project = (props) => {
       >
         <ImageListItem key={'img'}>
           <img
-            style={{ height: '600px', width: '90vw' }}
+            style={{ height: '600px', margin: 'auto' }}
             src={project.img}
             loading='lazy'
           />

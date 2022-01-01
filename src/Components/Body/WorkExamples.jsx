@@ -30,7 +30,7 @@ class WorkExamples extends React.Component {
       this.sitetheme = ligthTheme;
     }
     return (
-      <ImageList gap={10} sx={{ width: '90vw' }}>
+      <ImageList gap={10} sx={{ margin: 'auto' }}>
         <ImageListItem key='Subheader' cols={2}>
           <ListSubheader
             component='div'
