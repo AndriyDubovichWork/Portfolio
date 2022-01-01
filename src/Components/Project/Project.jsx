@@ -15,6 +15,7 @@ import { Box, ThemeProvider } from '@mui/system';
 import InfoIcon from '@mui/icons-material/Info';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import WebIcon from '@mui/icons-material/Web';
+import ShowTextOnHover from '../../helpers/ShowTextOnHover';
 let sitetheme = darkTheme;
 const Project = (props) => {
   const params = useParams();
@@ -41,8 +42,16 @@ const Project = (props) => {
         direction='column'
         alignItems='center'
         justifyContent='center'
-        sx={{ mt: 3 }}
+        sx={{ mt: 10 }}
       >
+        <Typography
+          variant='h2'
+          sx={{
+            color: sitetheme.palette.primary.color,
+          }}
+        >
+          {project.title}
+        </Typography>
         <ImageListItem key={'img'}>
           <img
             style={{ height: '600px', margin: 'auto' }}
@@ -52,28 +61,26 @@ const Project = (props) => {
           <ImageListItemBar
             title={''}
             sx={{ color: '#000' }}
+            sx={{
+              background:
+                'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
+                'rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
+            }}
             position='top'
             actionIcon={
               <IconButton sx={{ color: 'white', gap: 2 }} aria-label={'1'}>
-                <a target='_blank' href={project.github}>
+                <ShowTextOnHover Url={project.github} ShownText='repository'>
                   <GitHubIcon sx={{ color: '#fff', fontSize: 40 }} />
-                </a>
-                <a target='_blank' href={project.website}>
+                </ShowTextOnHover>
+                <ShowTextOnHover Url={project.website} ShownText='website'>
                   <WebIcon sx={{ color: '#fff', fontSize: 40 }} />
-                </a>
+                </ShowTextOnHover>
               </IconButton>
             }
             actionPosition='right'
           />
         </ImageListItem>
-        <Typography
-          variant='h3'
-          sx={{
-            color: sitetheme.palette.primary.color,
-          }}
-        >
-          {project.title}
-        </Typography>
+
         <Typography
           variant='h4'
           sx={{
@@ -98,7 +105,7 @@ const Project = (props) => {
         >
           {project.usedTechnologies.map((technologies) => {
             return (
-              <span>
+              <span key={technologies[0]}>
                 {'| ' + technologies[0]}:v{technologies[1] + ' |'}
               </span>
             );

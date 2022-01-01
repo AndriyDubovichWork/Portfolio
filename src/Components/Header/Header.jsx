@@ -40,7 +40,7 @@ class Header extends React.Component {
   render() {
     return (
       <HideOnScroll {...this.props}>
-        <AppBar theme={sitetheme} sx={{ position: 'static' }}>
+        <AppBar theme={sitetheme}>
           <Toolbar>
             <Grid
               container

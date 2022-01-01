@@ -10,6 +10,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import MarkEmailReadIcon from '@mui/icons-material/MarkEmailRead';
 import { connect } from 'react-redux';
 import style from './Fotter.module.css';
+import ShowTextOnHover from './../../helpers/ShowTextOnHover';
 
 let sitetheme = darkTheme;
 const Fotter = (props) => {
@@ -44,51 +45,35 @@ const Fotter = (props) => {
         Contact Info and Portfolio
       </Typography>
       <Box theme={sitetheme} className={style.wrapper}>
-        <Link
-          className={style.icon}
-          key={1}
-          href='https://t.me/asa_dad'
-          target='_blank'
+        <ShowTextOnHover ShownText='Telegram' Url='https://t.me/asa_dad'>
+          <TelegramIcon
+            className={style.fab}
+            fontSize='large'
+            sx={{ color: sitetheme.palette.primary.color }}
+          />
+        </ShowTextOnHover>
+
+        <ShowTextOnHover
+          ShownText='LinkedIn'
+          Url='https://www.linkedin.com/in/andriy-dubovich-14507821a/'
         >
-          <div className={style.tooltip}>Telegram</div>
-          <span>
-            <TelegramIcon
-              className={style.fab}
-              fontSize='large'
-              sx={{ color: sitetheme.palette.primary.color }}
-            />
-          </span>
-        </Link>
-        <Link
-          className={style.icon}
-          key={2}
-          href='https://www.linkedin.com/in/andriy-dubovich-14507821a/'
-          target='_blank'
+          <LinkedInIcon
+            className={style.fab}
+            fontSize='large'
+            sx={{ color: sitetheme.palette.primary.color }}
+          />
+        </ShowTextOnHover>
+
+        <ShowTextOnHover
+          ShownText='GitHub'
+          Url='https://github.com/AndriyDubovichWork'
         >
-          <div className={style.tooltip}>LinkedIn</div>
-          <span>
-            <LinkedInIcon
-              className={style.fab}
-              fontSize='large'
-              sx={{ color: sitetheme.palette.primary.color }}
-            />
-          </span>
-        </Link>
-        <Link
-          className={style.icon}
-          key={3}
-          href='https://github.com/AndriyDubovichWork'
-          target='_blank'
-        >
-          <div className={style.tooltip}>GitHub</div>
-          <span>
-            <GitHubIcon
-              className={style.fab}
-              fontSize='large'
-              sx={{ color: sitetheme.palette.primary.color }}
-            />
-          </span>
-        </Link>
+          <GitHubIcon
+            className={style.fab}
+            fontSize='large'
+            sx={{ color: sitetheme.palette.primary.color }}
+          />
+        </ShowTextOnHover>
 
         <div
           className={style.icon}
@@ -103,44 +88,34 @@ const Fotter = (props) => {
           }}
         >
           {!isCopied ? (
-            <>
-              <div className={style.tooltip}>email</div>
-              <span>
-                <EmailIcon
-                  className={style.fab}
-                  fontSize='large'
-                  sx={{ color: sitetheme.palette.primary.color }}
-                />
-              </span>
-            </>
+            <ShowTextOnHover ShownText='email'>
+              <EmailIcon
+                className={style.fab}
+                fontSize='large'
+                sx={{ color: sitetheme.palette.primary.color }}
+              />
+            </ShowTextOnHover>
           ) : (
-            <>
-              <div className={style.tooltip}>copied</div>
-              <span>
-                <MarkEmailReadIcon
-                  className={style.fab}
-                  fontSize='large'
-                  sx={{ color: sitetheme.palette.primary.color }}
-                />
-              </span>
-            </>
+            <ShowTextOnHover ShownText='copied'>
+              <MarkEmailReadIcon
+                className={style.fab}
+                fontSize='large'
+                sx={{ color: sitetheme.palette.primary.color }}
+              />
+            </ShowTextOnHover>
           )}
         </div>
-        <Link
-          className={style.icon}
-          key={4}
-          href='https://drive.google.com/file/d/1T8-FCz55R5X94OAoz4E2Qjuau2HyQm7B/view?usp=sharing'
-          target='_blank'
+
+        <ShowTextOnHover
+          ShownText='Portfolio.pdf'
+          Url='https://drive.google.com/file/d/1T8-FCz55R5X94OAoz4E2Qjuau2HyQm7B/view?usp=sharing'
         >
-          <div className={style.tooltip}>Portfolio.pdf</div>
-          <span>
-            <ContactPageIcon
-              className={style.fab}
-              fontSize='large'
-              sx={{ color: sitetheme.palette.primary.color }}
-            />
-          </span>
-        </Link>
+          <ContactPageIcon
+            className={style.fab}
+            fontSize='large'
+            sx={{ color: sitetheme.palette.primary.color }}
+          />
+        </ShowTextOnHover>
       </Box>
     </Box>
   );

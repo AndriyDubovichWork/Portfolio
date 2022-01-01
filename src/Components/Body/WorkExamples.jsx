@@ -12,6 +12,7 @@ import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import WebIcon from '@mui/icons-material/Web';
+import ShowTextOnHover from '../../helpers/ShowTextOnHover';
 
 class WorkExamples extends React.Component {
   sitetheme = darkTheme;
@@ -66,15 +67,22 @@ class WorkExamples extends React.Component {
                     sx={{ color: 'white' }}
                     aria-label={`star ${project.title}`}
                   >
-                    <a target='_blank' href={project.github}>
+                    <ShowTextOnHover
+                      Url={project.github}
+                      ShownText='repository'
+                    >
                       <GitHubIcon sx={{ color: '#fff', fontSize: 40 }} />
-                    </a>
-                    <a target='_blank' href={project.website}>
+                    </ShowTextOnHover>
+                    <ShowTextOnHover Url={project.website} ShownText='website'>
                       <WebIcon sx={{ color: '#fff', fontSize: 40 }} />
-                    </a>
-                    <NavLink to={'/project/' + project.id}>
+                    </ShowTextOnHover>
+                    <ShowTextOnHover
+                      Url={'/project/' + project.id}
+                      ShownText='Info'
+                      isNavLink={true}
+                    >
                       <InfoIcon sx={{ color: '#fff', fontSize: 40 }} />
-                    </NavLink>
+                    </ShowTextOnHover>
                   </IconButton>
                 }
                 actionPosition='right'

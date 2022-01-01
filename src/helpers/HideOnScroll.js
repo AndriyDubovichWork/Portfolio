@@ -1,11 +1,9 @@
 import { Slide, useScrollTrigger } from '@mui/material';
 
 function HideOnScroll(props) {
-  const { children, window } = props;
+  const { children } = props;
 
-  const trigger = useScrollTrigger({
-    target: window ? window() : undefined,
-  });
+  const trigger = useScrollTrigger();
 
   return (
     <Slide appear={false} direction='down' in={!trigger}>
