@@ -75,7 +75,7 @@ let initialState = {
       description:
         'Simple API based project.You can choose country or state and it will show info about dead from covid and infected.Used some University API so data can be dont 100% true',
       github: 'https://github.com/AndriyDubovichWork/React-Covid-data-from-API',
-      website: '',
+      website: 'https://andriydubovichwork.github.io/ReactCovidDataFromAPI/',
       usedTechnologies: [
         ['HTML', '5'],
         ['CSS', '3'],

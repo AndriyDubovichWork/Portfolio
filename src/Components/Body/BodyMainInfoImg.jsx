@@ -18,7 +18,7 @@ const BodyMainInfoImg = (props) => {
           fontFamily: 'Bakbak One',
         }}
       >
-        Hello my name is Andriy Dubovich and I'm {props.MyAge}
+        Hello my name is Andriy Dubovich <br /> I'm React Developer
         <br />
         I'm from Ukraine{' '}
         <img

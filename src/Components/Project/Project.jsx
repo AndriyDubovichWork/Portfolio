@@ -44,7 +44,11 @@ const Project = (props) => {
         sx={{ mt: 3 }}
       >
         <ImageListItem key={'img'}>
-          <img style={{ height: '600px', width: '90vw' }} src={project.img} />
+          <img
+            style={{ height: '600px', width: '90vw' }}
+            src={project.img}
+            loading='lazy'
+          />
           <ImageListItemBar
             title={''}
             sx={{ color: '#000' }}
