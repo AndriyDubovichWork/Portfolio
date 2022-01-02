@@ -33,10 +33,12 @@ const BodyMainInfoImg = (props) => {
           />
         </ShowTextOnHover>
         Am I Looking for job now?
-        <Checkbox
-          checked={props.isLookingForjob[0]}
-          sx={{ '& .MuiSvgIcon-root': { fontSize: 50, color: '#fff' } }}
-        />
+        <ShowTextOnHover ShownText={props.isLookingForjob[0] ? 'yes' : 'mo'}>
+          <Checkbox
+            checked={props.isLookingForjob[0]}
+            sx={{ '& .MuiSvgIcon-root': { fontSize: 50, color: '#fff' } }}
+          />
+        </ShowTextOnHover>
       </Typography>
     </Typography>
   );

@@ -48,9 +48,10 @@ const Project = (props) => {
           variant='h2'
           sx={{
             color: sitetheme.palette.primary.color,
+            fontSize: '300%',
           }}
         >
-          {project.title}
+          <b>{project.title}</b>
         </Typography>
         <ImageListItem key={'img'}>
           <img
