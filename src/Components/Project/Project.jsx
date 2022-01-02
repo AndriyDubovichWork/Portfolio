@@ -49,6 +49,8 @@ const Project = (props) => {
           sx={{
             color: sitetheme.palette.primary.color,
             fontSize: '300%',
+            mb: 1,
+            fontFamily: 'Pushster',
           }}
         >
           <b>{project.title}</b>
@@ -86,9 +88,20 @@ const Project = (props) => {
           variant='h4'
           sx={{
             color: sitetheme.palette.primary.color,
+            fontFamily: 'Bakbak One',
           }}
         >
           {project.description}
+        </Typography>
+        <Typography
+          variant='h4'
+          sx={{
+            color: sitetheme.palette.primary.color,
+            mt: 2,
+            fontFamily: 'Bakbak One',
+          }}
+        >
+          Learned :{project.learned}
         </Typography>
         <Typography
           variant='h3'

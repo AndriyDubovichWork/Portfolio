@@ -77,7 +77,6 @@ class Header extends React.Component {
                   onChange={this.ChangeThemeColorHandler.bind(this)}
                 />
               }
-              // label={props.themeInfo}
               label={MaterialUISwitchlabel}
             />
           </Toolbar>

@@ -14,7 +14,9 @@ let initialState = {
       img: SocialNetworkimg,
       title: 'React Based Social Network',
       description:
-        "This is Social React Network I developed it for month using YouTube courses.You can Follow/Unfollow another users check their profiles,can Login/Logout from profile,make local posts,send local messages.Also I used API for Login/Logout,and to get users data.I tried TDD(Test Driven Development) at first but my project dont 100% covered by tests.At this project I learned how to use React make Components,how to use useEfect,useState and other React features.Also I made my ovn Redux using js but then i turned to Redux library.Actualy I learned the basement for my future projects and I will make every next project beter then previous.If youl'd like to try you can login using this data Email:free@samuraijs.com,password:free",
+        'This is React Social Network I developed it for month using YouTube courses.You can Follow/Unfollow another users check their profiles,can Login/Logout from profile,make local posts,send local messages.Also I used API for Login/Logout,and to get users data.I tried TDD(Test Driven Development) at first but my project dont 100% covered by tests.',
+      learned:
+        "how to use React ,made Component,how to use useEfect,useState and other React features.Also I made my own Redux using js but then I changed to Redux library.How to use async await functions React.lazy/memo,how to write unit tests,how Babel work ,and what it does.Actualy I learned the basement for my future projects and I will make every next project beter then previous.If youl'd like to try you can login using this data Email:free@samuraijs.com,password:free",
       github: 'https://github.com/AndriyDubovichWork/React-Social-Network',
       website: 'https://andriydubovichwork.github.io/React-Social-Network/#/',
       usedTechnologies: [
@@ -32,6 +34,7 @@ let initialState = {
       title: 'Microsoft.com adapive copy',
       description:
         'This is Microsoft.com copy.Developed it using HTML and CSS only.I made it with adaptive design using @media.Actualy its only landing page but I think its beter than oficial site.',
+      learned: 'how to create adaptive sites.',
       github: 'https://github.com/AndriyDubovichWork/UnOfficial-Microsoft-site',
       website:
         'https://andriydubovichwork.github.io/UnOfficial-Microsoft-site/',
@@ -45,7 +48,8 @@ let initialState = {
       img: SportTimer,
       title: 'Sport timer',
       description:
-        'This is Pure JS Sport timer for sport exercises.I made it using setTimeout function and other pure js functions.you can change time for sport,relax and times you have to repeat the bottom bar shows the all exercises progress.Also when it chenges the sport/relax it also change the background and make noice.',
+        'This is Pure JS Sport timer for sport exercises.I made it using setTimeout,getElementById function and other pure js functions.You can change time for sport,relax and times you have to repeat.The bottom bar shows the all exercises progress.Also when it chenges the sport/relax it change the background and make noice.',
+      learned: 'how to use asynchronous functions and work with them',
       github: 'https://github.com/AndriyDubovichWork/sport_relax_timer',
       website: 'https://andriydubovichwork.github.io/sport_relax_timer/',
       usedTechnologies: [
@@ -60,6 +64,7 @@ let initialState = {
       title: 'JS ToDo list',
       description:
         'This is basic JS ToDo list you can add/delete tasks.you can chenge background colour colour of the text and the buttons border color.Also You can delete all tasks.',
+      learned: 'the JS Basics, how to work with it',
       github: 'https://github.com/AndriyDubovichWork/ToDoListJS',
       website: 'https://andriydubovichwork.github.io/ToDoListJS/',
       usedTechnologies: [
@@ -73,7 +78,8 @@ let initialState = {
       img: CovidData,
       title: 'Covid Data form API',
       description:
-        'Simple API based project.You can choose country or state and it will show info about dead from covid and infected.Used some University API so data can be dont 100% true',
+        'Simple API based project.You can choose country or state and it will show info about dead from covid and infected.Used some free API so data can be dont 100% true',
+      learned: 'how to use API and make requests,using fetch',
       github: 'https://github.com/AndriyDubovichWork/React-Covid-data-from-API',
       website: 'https://andriydubovichwork.github.io/ReactCovidDataFromAPI/',
       usedTechnologies: [

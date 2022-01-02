@@ -16,10 +16,10 @@ const BodyMainInfoImg = (props) => {
         variant='h3'
         component='section'
         style={{
-          fontFamily: 'Bakbak One',
+          fontFamily: 'Pushster',
         }}
       >
-        Hello my name is Andriy Dubovich <br /> I'm React Developer
+        Hello I'm Andriy Dubovich : React Developer
         <br />
         I'm from Ukraine{' '}
         <ShowTextOnHover
@@ -32,13 +32,13 @@ const BodyMainInfoImg = (props) => {
             src='https://flagemoji.com/wp-content/uploads/2020/02/Flag_of_Ukraine.svg'
           />
         </ShowTextOnHover>
-        Am I Looking for job now?
+        {/* Am I Looking for job now?
         <ShowTextOnHover ShownText={props.isLookingForjob[0] ? 'yes' : 'mo'}>
           <Checkbox
             checked={props.isLookingForjob[0]}
             sx={{ '& .MuiSvgIcon-root': { fontSize: 50, color: '#fff' } }}
           />
-        </ShowTextOnHover>
+        </ShowTextOnHover> */}
       </Typography>
     </Typography>
   );
