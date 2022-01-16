@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import { SetAge } from '../../Redux/MainPageReducer';
 import style from './Body.module.css';
 import ShowTextOnHover from './../../helpers/ShowTextOnHover';
+import Typewriter from 'typewriter-effect';
+
 const BodyMainInfoImg = (props) => {
   return (
     <Typography
@@ -19,9 +21,19 @@ const BodyMainInfoImg = (props) => {
           fontFamily: 'Pushster',
         }}
       >
-        Hello I'm Andriy Dubovich : React Developer
-        <br />
-        I'm from Ukraine{' '}
+        Hello I'm Andriy Dubovich :{' '}
+        <Typography
+          sx={{ fontSize: '4rem', fontFamily: 'Dongle', fontWeigth: '800' }}
+        >
+          <Typewriter
+            options={{
+              strings: ['React Developer', 'Front-End Programmer'],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </Typography>
+        I'm from Ukraine
         <ShowTextOnHover
           ShownText='more info'
           Url='https://en.wikipedia.org/wiki/Ukraine'
