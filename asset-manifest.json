@@ -1,19 +1,22 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.f492fdaf.css",
-    "main.js": "/Portfolio/static/js/main.f6b810db.js",
+    "main.js": "/Portfolio/static/js/main.f6cc45fe.js",
     "static/media/MicrosoftCopy.png": "/Portfolio/static/media/MicrosoftCopy.b3bae1ac2323768e85ed.png",
     "static/media/SportTimer.png": "/Portfolio/static/media/SportTimer.d6d244310b375eda246b.png",
+    "static/media/shopWithCart.png": "/Portfolio/static/media/shopWithCart.89e66e6908fd5a384af2.png",
     "static/media/SocialNetwork.png": "/Portfolio/static/media/SocialNetwork.2fde0741c2a8b34166a8.png",
+    "static/media/UaFlag.png": "/Portfolio/static/media/UaFlag.5a84000b5de726a2729e.png",
     "static/media/CovidData.png": "/Portfolio/static/media/CovidData.ad0a2e013490c15bfed4.png",
+    "static/media/USAFlag.jpg": "/Portfolio/static/media/USAFlag.d30364aca41ae8aaaa95.jpg",
     "static/media/WordHub.png": "/Portfolio/static/media/WordHub.524758a0ede18c0da47b.png",
     "static/media/ToDo.png": "/Portfolio/static/media/ToDo.d08891b5ea5f2948725e.png",
     "index.html": "/Portfolio/index.html",
     "main.f492fdaf.css.map": "/Portfolio/static/css/main.f492fdaf.css.map",
-    "main.f6b810db.js.map": "/Portfolio/static/js/main.f6b810db.js.map"
+    "main.f6cc45fe.js.map": "/Portfolio/static/js/main.f6cc45fe.js.map"
   },
   "entrypoints": [
     "static/css/main.f492fdaf.css",
-    "static/js/main.f6b810db.js"
+    "static/js/main.f6cc45fe.js"
   ]
 }
